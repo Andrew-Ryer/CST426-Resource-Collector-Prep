@@ -176,7 +176,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 6e72656bu
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -467,8 +467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 2402111284
+  GlobalObjectIdHash: 4229884011
   InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
   Ownership: 1
   AlwaysReplicateAsRoot: 0
@@ -1626,13 +1627,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 8b3981fad96f803419391e4b939e0f85, type: 2}
     - target: {fileID: 5866666021909216657, guid: 917b8ee0c2c9bf84385515b6fd3723be, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'upperleg.l'\n\tTransform 'upperleg.r'\n\tTransform
-        'hips'\n\tTransform 'upperarm.r'\n\tTransform 'lowerarm.r'\n\tTransform 'upperarm.l'\n\tTransform
-        'chest'\n\tTransform 'lowerarm.l'\n\tTransform 'lowerleg.r'\n\tTransform
-        'lowerleg.l'\n\tand more ...\n\tFrom animation clip 'Interact'\n\tFrom animation
-        clip 'Idle_A'\n\tFrom animation clip 'Walking_A'"
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are already bound by a Humanoid avatar. These transforms can only be changed by Humanoid clips.\n\tTransform 'upperleg.l'\n\tTransform 'upperleg.r'\n\tTransform 'hips'\n\tTransform 'upperarm.r'\n\tTransform 'lowerarm.r'\n\tTransform 'upperarm.l'\n\tTransform 'chest'\n\tTransform 'lowerarm.l'\n\tTransform 'lowerleg.r'\n\tTransform 'lowerleg.l'\n\tand more ...\n\tFrom animation clip 'Interact'\n\tFrom animation clip 'Idle_A'\n\tFrom animation clip 'Walking_A'"
       objectReference: {fileID: 0}
     - target: {fileID: 7397162098512366591, guid: 917b8ee0c2c9bf84385515b6fd3723be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1881,19 +1876,12 @@ MonoBehaviour:
   m_Animator: {fileID: 637217615066948756}
   TransitionStateInfoList:
   - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: -453240694
+    Layer: 1
+    OriginatingState: 753088835
     DestinationState: -662453572
     TransitionDuration: 0.25
     TriggerNameHash: -662453572
     TransitionIndex: 0
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: -453240694
-    DestinationState: 2122884932
-    TransitionDuration: 0.25
-    TriggerNameHash: 1547809795
-    TransitionIndex: 1
   AnimatorParameterEntries:
     ParameterEntries:
     - name: Speed

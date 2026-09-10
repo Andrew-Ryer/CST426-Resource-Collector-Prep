@@ -16,6 +16,7 @@ public class PlayerNameLabel : NetworkBehaviour
         base.OnNetworkSpawn();
 
         // TODO Slice 1.1: label this player with the NetworkObject owner id.
+        _label.text = $"Player {OwnerClientId}";
     }
 
     void LateUpdate()
@@ -23,5 +24,7 @@ public class PlayerNameLabel : NetworkBehaviour
         // TODO Slice 1.2: rotate the world-space label to face the main
         // camera, keeping the look direction flat by setting its y to zero.
         // </> end of Slice 1
+        Vector3 target = transform.position + (transform.position - Camera.main.transform.position);
+        _label.transform.LookAt(target);
     }
 }
