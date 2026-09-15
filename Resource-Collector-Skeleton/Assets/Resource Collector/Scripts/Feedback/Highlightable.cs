@@ -20,7 +20,7 @@ public class Highlightable : MonoBehaviour
 
     public void SetHighlighted(bool isHighlighted)
     {
-        Debug.Log("Trying to Highlight");
+        //Debug.Log("Trying to Highlight");
         
         // TODO Slice 3.2: set _Selection_Enabled on each material that supports it.
         // TODO Slice 3.3: forward the requested state to ApplyHighlight. </> end of Slice 3

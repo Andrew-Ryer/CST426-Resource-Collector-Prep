@@ -1,4 +1,5 @@
 using Unity.Netcode;
+using UnityEngine;
 
 /*
  * Interactable is the shared server-owned entry point for every world object a
@@ -14,7 +15,12 @@ public abstract class Interactable : NetworkBehaviour
     {
         if (!IsServer) return;
 
+        Debug.Log($"Requesting server interact for {heldItem.ObjectType}");
+        
         // TODO Slice 6.4: validate CanInteract before calling the subclass behavior.
+        
+        Interact(heldItem);
+        
         // Next: Slice 6.5 in ItemPickup.Interact.
     }
 
