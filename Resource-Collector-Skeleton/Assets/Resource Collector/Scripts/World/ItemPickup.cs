@@ -40,7 +40,8 @@ public class ItemPickup : Interactable
         // TODO Slice 7.2: SpawnHeldItemAsNewPickup first so a swap returns the old type.
         // Next: Slice 7.3 in PlayerHeldItem.OnNetworkPreDespawn.
         
-        NetworkObject.Despawn(false);
+        //NetworkObject.Despawn(false);
+        NetworkObject.Despawn(!NetworkObject.InScenePlaced);
         
         
     }

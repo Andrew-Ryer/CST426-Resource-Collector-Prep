@@ -161,13 +161,10 @@ public class PlayerController : NetworkBehaviour
         // If it has an Interactable, call ServerInteract(_heldItem).
         Dictionary<ulong, NetworkObject> spawnedObjectMap = NetworkManager.SpawnManager.SpawnedObjects;
         
-        if (!spawnedObjectMap.TryGetValue(networkObjectId, out NetworkObject spawnedObject));
+        if (!spawnedObjectMap.TryGetValue(networkObjectId, out NetworkObject spawnedObject))
         {
             Debug.Log($"Couldn't find id: {networkObjectId}");
-            /*
-             * SOMETHING WEIRD WITH THIS RETURN
-             */
-            //return;
+            return;
         }
         
         if (!spawnedObject.TryGetComponent(out Interactable interactable))
